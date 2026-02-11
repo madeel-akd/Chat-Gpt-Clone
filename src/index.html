@@ -7,6 +7,7 @@
     <title>ChatGPT Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,16 +16,38 @@
     <!-- Sidebar -->
     <div class="sidebar flex flex-col justify-between w-64">
         <div>
-            <div class="p-4">
+            <div class="p-4 flex flex-auto items-center gap-20">
                 <img src="./Assets/Logo png.png" class="w-20">
+                <img src="./Assets/sidebar.png" class="w-6 h-6">
             </div>
+
             <ul class="menu">
-                <li class="menuItem">New Chat</li>
-                <li class="menuItem">Search Chats</li>
-                <li class="menuItem">Images</li>
-                <li class="menuItem">Apps</li>
-                <li class="menuItem">Codex</li>
-                <li class="menuItem">Projects</li>
+                <li class="flex flex-row cursor-pointer"> <img src="./Assets/newchat.png">
+                    <span>New Chat</span>
+                </li>
+
+
+                <li class="flex flex-row cursor-pointer"> <img src="./Assets/search.png">
+                    <span>Search Chats</span>
+                </li>
+
+
+                <li class="flex flex-row cursor-pointer"> <img src="./Assets/images.png">
+                    <span>Images</span>
+                </li>
+
+                <li class="flex flex-row cursor-pointer"> <img src="./Assets/windows.png">
+                    <span>Apps</span>
+                </li>
+
+                <li class="flex flex-row cursor-pointer"> <img src="./Assets/codex.png">
+                    <span>Codex</span>
+                </li>
+
+                <li class="flex flex-row cursor-pointer"> <img src="./Assets/projects.png">
+                    <span>Projects</span>
+                </li>
+
             </ul>
         </div>
         <div class="p-4 border-t border-gray-700">
@@ -44,9 +67,9 @@
 
         <!-- Header -->
         <div class="flex justify-between items-center p-4 border-b border-gray-700">
-            <h1 class="font-semibold">Chat</h1>
-            <div class="flex gap-4">
-                <button class="btn btn-sm rounded-full">Get Plus ✨</button>
+            <h1 class="font-semibold">ChatGPT </h1>
+            <div class="flex gap-20">
+                <button class="btn btn-sm rounded-full">Get Plus <img src="./Assets/4corner-star.png"></button>
                 <button class="btn btn-sm">Share</button>
             </div>
         </div>
@@ -56,9 +79,18 @@
 
         <!-- Input Area -->
         <div class="p-4">
-            <div class="flex gap-2 inputArea p-3 rounded-lg">
+            <div class="flex gap-2 inputArea p-3">
                 <input id="userInput" class="flex-1 bg-transparent outline-none" placeholder="Ask anything...">
-                <button id="sendBtn" class="btn btn-primary">Send</button>
+               <button id="sendBtn" class="btn btn-primary p-2">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         class="w-5 h-5" 
+         fill="none" 
+         viewBox="0 0 24 24" 
+         stroke="currentColor" 
+         stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+    </svg>
+</button>
             </div>
             <p class="text-center text-xs mt-2 opacity-60">
                 Chat Gpt can make mistakes. check important info.
